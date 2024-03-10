@@ -26,6 +26,14 @@ public class Student
         this.grades = grades;
     }
 
+     public Student(string firstname, string lastname, int month, int year)
+    {
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.month = month;
+        this.year = year;
+    }
+
 
     public void AddGrade(Grade grade)
     {
@@ -44,7 +52,10 @@ public class Student
     }
 
 
-    public List<Grade> SortGradeBySubject(){
+    public List<Grade> SortGradeBySubject()
+    {
+
+        // Bubble Sort
         for(int i = 0; i < grades.Count(); i++){
             for(int j = 0; j < grades.Count()-1;j++){
                 char first = grades[j].Subject.ToCharArray()[0];
