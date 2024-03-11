@@ -21,7 +21,9 @@ public class Grade
     }
 
     
-    public string Subject{ get{ return subject; }}
-
+    
     public int Grading { get{ return grading;} }
+
+    public string Subject { get{ return subject;}  }
+
 }
